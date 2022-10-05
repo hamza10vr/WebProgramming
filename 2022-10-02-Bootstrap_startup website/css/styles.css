@@ -19,7 +19,7 @@ body {
 
 /* Navigation bar */
 .navbar {
-  padding:0 0 4.5rem;
+  padding: 0 0 4.5rem;
 }
 
 .nabbar-brand {
@@ -28,16 +28,34 @@ body {
   font-weight: bold;
 }
 
-nav-item {
+.nav-item {
   padding: 0 18px;
 }
 
-nav-link {
+.nav-link {
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat-Light;', sans-serif;
   padding: 0 18px;
 }
 
 .rotated {
   transform: rotate(25deg)
+}
+
+#features {
+  padding: 7% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: Montserrat;
+}
+
+p {
+  color: #8f8f8f;
 }
