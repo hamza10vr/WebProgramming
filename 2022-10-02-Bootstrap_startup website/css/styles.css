@@ -37,3 +37,7 @@ nav-link {
   font-family: 'Montserrat', sans-serif;
   padding: 0 18px;
 }
+
+.rotated {
+  transform: rotate(25deg)
+}
