@@ -44,7 +44,15 @@ body {
   transform: rotate(25deg);
   position: absolute;
 }
-
+@media (max-width: 980px){
+  .rotated {
+    transform: rotate(0);
+    position:static;
+  }
+  #title {
+    text-align: center;
+  }
+}
 #features {
   padding: 7% 15%;
   background-color: #fff;
