@@ -101,10 +101,7 @@ header {
 
 
 }
-.project-item img {
-    float: left;
-    padding: 20px;
-}
+
 
 .project h3 {
     margin: 0;
@@ -153,3 +150,11 @@ footer {
     display: inline-flex;
 }
 
+/* Responsive
+=================================*/
+@media screen and (min-width:750px) {
+    .project-item img {
+        float: left;
+        padding: 20px;
+    }
+}
