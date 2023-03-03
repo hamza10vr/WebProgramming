@@ -18,36 +18,22 @@
         <input type="button" value="4" onclick="form.calc_screen.value+=4">
         <input type="button" value="5" onclick="form.calc_screen.value+=5">
         <input type="button" value="6" onclick="form.calc_screen.value+=6">
-        <input type="button" value="-" onclick="form.calc_screen.value+='-'">
+        <input type="button" value="-" onclick="sub()">
         <br />
         <input type="button" value="7" onclick="form.calc_screen.value+=7">
         <input type="button" value="8" onclick="form.calc_screen.value+=8">
         <input type="button" value="9" onclick="form.calc_screen.value+=9">
-        <input type="button" value="/" onclick="form.calc_screen.value+='/'">
+        <input type="button" value="/" onclick="multiply()">
 
         <br />
         <input type="button" value="C" onclick="form.calc_screen.value=''">
         <input type="button" value="0" onclick="form.calc_screen.value+=0">
         <input type="button" value="=" onclick="form.calc_screen.value=eval(form.calc_screen.value)">
-        <input type="button" value="x" onclick="form.calc_screen.value+='*'">
+        <input type="button" value="x" onclick="divide()">
 
       </form>
 
-      <script type="text/javascript">
-        function add() {
-          var act=0, b=0;
-          act = form.calc_screen.value ;
-          b = act.charAt(act.length-1);
-          if (b == '+' || b == '-' || b == '/' || b == '*') {
-            form.calc_screen.value = act.substr(0, act.length -1);
-            form.calc_screen.value += '+';
-          }else {
-            form.calc_screen.value += '+'
-          }
-
-
-        }
-      </script>
+      <script src="calc.js" charset="utf-8"></script>
     </div>
 
   </body>
