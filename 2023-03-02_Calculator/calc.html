@@ -12,7 +12,7 @@
         <input type="button" value="1" onclick="form.calc_screen.value+=1">
         <input type="button" value="2" onclick="form.calc_screen.value+=2">
         <input type="button" value="3" onclick="form.calc_screen.value+=3">
-        <input type="button" value="+" onclick="form.calc_screen.value+='+'">
+        <input type="button" value="+" onclick="add()">
 
         <br />
         <input type="button" value="4" onclick="form.calc_screen.value+=4">
@@ -33,6 +33,21 @@
 
       </form>
 
+      <script type="text/javascript">
+        function add() {
+          var act=0, b=0;
+          act = form.calc_screen.value ;
+          b = act.charAt(act.length-1);
+          if (b == '+' || b == '-' || b == '/' || b == '*') {
+            form.calc_screen.value = act.substr(0, act.length -1);
+            form.calc_screen.value += '+';
+          }else {
+            form.calc_screen.value += '+'
+          }
+
+
+        }
+      </script>
     </div>
 
   </body>
