@@ -25,6 +25,12 @@ function addTask(task) {
 
     newTask.innerHTML = taskValue;
 
+    newTask.onclick = () => {
+      newTask.classList.toggle("completed");
+      console.log(newTask);
+    };
     taskList.appendChild(newTask);
+
+    input.value = "";
   }
 }
