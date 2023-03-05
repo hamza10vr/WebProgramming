@@ -25,20 +25,14 @@ function addTask(task) {
 
     newTask.innerHTML = taskValue;
 
-    const onClickContent = `
-    <span>${taskValue}&#10004;</span>
-    <span onclick="deleteTask()">&#10060</span>
-    `;
     newTask.onclick = () => {
       newTask.classList.toggle("completed");
       console.log(newTask);
 
       newTask.classList.contains("completed")
-        ? ((newTask.innerHTML = onClickContent),
+        ? ((newTask.innerHTML = `<span>${taskValue}&#10004;</span><span onclick='deleteTask()'>&#10060</span>`),
           newTask.classList.toggle("delete_task"))
-        : ((newTask.innerHTML = `
-        ${taskValue}
-        `),
+        : ((newTask.innerHTML = `${taskValue}`),
           newTask.classList.toggle("delete_task"));
       console.log(newTask);
     };
@@ -46,4 +40,14 @@ function addTask(task) {
 
     input.value = "";
   }
+}
+
+// delete task function
+
+function deleteTask() {
+  console.log(document.querySelectorAll("li"));
+
+  document.querySelectorAll("li").forEach((element) => {
+    element.classList.contains("delete_task") ? element.remove() : element;
+  });
 }
