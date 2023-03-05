@@ -45,7 +45,7 @@ function addTask(task) {
 // delete task function
 
 function deleteTask() {
-  console.log(document.querySelectorAll("li"));
+  // console.log(document.querySelectorAll("li"));
 
   document.querySelectorAll("li").forEach((element) => {
     element.classList.contains("delete_task") ? element.remove() : element;

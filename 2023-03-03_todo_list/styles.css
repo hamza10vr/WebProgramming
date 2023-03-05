@@ -5,6 +5,10 @@ body {
 
 }
 
+label {
+  color: aqua;
+  font-size: 2rem;
+}
 h1 {
   text-align: center;
   color: aqua;
